@@ -43,7 +43,7 @@
 #IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN          #
 #CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.       #
 #																				  #
-# Version 2.1																	  #
+# Version 2.3																	  #
 ###################################################################################
 
 cleanup_on_exit() {
@@ -321,8 +321,7 @@ fi
 #For the hosts file
 if [ -e $HOSTS_FILE ]; then
 	echo "$NOTE Found the hosts file. Changing hostname to shine-$TARGET_NODEID"
-
-	sed -i "s/\(127.0.1.1 *\t\t\t\t *\).*/\1shine-$TARGET_NODEID/" $HOSTS_FILE
+	sed -i "s/\("127.0.1.1"*\t *\).*/\1"shine-$TARGET_NODEID"/" $HOSTS_FILE
 	if [ $? -eq 0 ]; then
 		echo "$NOTE Hostname successfully changed"
 	else
