@@ -1,6 +1,6 @@
 # Raspbian Installer for Shine Seniors MedBox gateway
 
-##### THIS SCRIPT SHOULD BE RUN AS ROOT												  
+#### THIS SCRIPT SHOULD BE RUN AS ROOT												  
 The shinegw-rasbian-installer.sh bash script is the second part of the SD replicating system for the SMU-TCS iCity Labs RPi Gateway. This script initially partition (sfdisk) and format  the SD card into a 60MB FAT partition and the rest of the SD into a linux Ext partition. Then it mounts the Ext partition to ‘/media/os’ and FAT partition to ‘/media/os/boot’ and extract the previously generated tarball made by the make_tarball.sh script. 	  
 																				  
 Please note that the older versions of sfdisk gets the partitioning table parameters in a different template than the newer versions. Both the versions are included in the script. Please feel free to change the version checking statement (# Check for the version) of the script as required. 				  
@@ -12,7 +12,7 @@ If the ssh key to the server was given as the last parameter, the script will do
 	KEYSERVER_USERNAME="user_account_name_of_the_provided_key"					  
 	SHINEGW_FILES_DIR="location_of_the ‘shineseniors-reverse-ssh-key’ file"		  
 ```																		  
-### Using shinegw-rasbian-installer script:										  
+## Using shinegw-rasbian-installer script:										  
 																				  
 ##### Install prerequisite software:	
 ```sh
