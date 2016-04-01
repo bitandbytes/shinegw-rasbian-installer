@@ -16,7 +16,7 @@ If the ssh key to the server was given as the last parameter, the script will do
 																				  
 ##### Install prerequisite software:	
 ```sh
-$sudo apt-get -y install pv bsdtar 											  
+$ sudo apt-get -y install pv bsdtar 											  
 ```
 ##### Usage:
 ```sh
