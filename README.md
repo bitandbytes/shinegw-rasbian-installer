@@ -14,7 +14,7 @@ If the ssh key to the server was given as the last parameter, the script will do
 ```																		  
 ## Using shinegw-rasbian-installer script:										  
 																				  
-##### Install prerequisite software:	
+##### Preliminaries:	
 ```sh
 $ sudo apt-get -y install pv bsdtar 											  
 ```
